@@ -1,12 +1,43 @@
-<!-- Import the component -->
-<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
-
-<!-- Use it like any other HTML element -->
-<model-viewer
-  alt="Your 3D Model Description"
-  src="https://github.com/meow-cat-star/3dchocolate/raw/refs/heads/main/chocolate.glb"
-  ar
-  shadow-intensity="1"
-  camera-controls
-  touch-action="pan-y"
-></model-viewer>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Model Viewer</title>
+  <!-- Import the Model Viewer library -->
+  <script type="module" src="https://github.com/meow-cat-star/3dchocolate/raw/refs/heads/main/chocolate.glb"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #f9f9f9;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    model-viewer {
+      width: 100%;
+      max-width: 600px;
+      height: 400px;
+    }
+  </style>
+</head>
+<body>
+  <h1>3D Model Viewer</h1>
+  <!-- Use the model viewer component -->
+  <model-viewer
+    alt="A 3D Model of Chocolate"
+    src="https://raw.githubusercontent.com/meow-cat-star/3dchocolate/main/chocolate.glb"
+    ar
+    shadow-intensity="1"
+    camera-controls
+    touch-action="pan-y">
+  </model-viewer>
+</body>
+</html>
