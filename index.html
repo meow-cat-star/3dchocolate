@@ -1,41 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <body>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tasty Chocolate</title>
   <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      background-color: #f9f9f9;
-    }
-    h1 {
-      margin-bottom: 20px;
-    }
-    model-viewer {
-      width: 100%;
-      max-width: 600px;
-      height: 400px;
-    }
-  </style>
+<model-viewer 
+  alt="red chocolate 3d model"
+  src="https://github.com/meow-cat-star/3dchocolate/raw/refs/heads/main/3D%20chocolate.glb" 
+  poster="https://github.com/meow-cat-star/3dchocolate/raw/main/%EB%B9%A8%EA%B0%95.png" 
+  shadow-intensity="1" 
+  camera-controls 
+  touch-action="pan-y"></model-viewer>
+    </body>
 </head>
-<body>
-  <h1>Tasty Chocolate</h1>
-  <model-viewer
-    alt="A 3D Model of Chocolate"
-    src="https://github.com/meow-cat-star/3dchocolate/raw/refs/heads/main/3D%20chocolate.glb"
-    ar 
-    shadow-intensity="1"
-    camera-controls
-    touch-action="pan-y">
-  </model-viewer>
-</body>
 </html>
